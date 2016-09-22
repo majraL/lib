@@ -133,11 +133,10 @@ select {
 	height: 200px;
 	margin: 0 auto;
 	text-align: center;
-	position: relative;
 }
 
 #output {
-	position: absolute;
-	top: 40%;
-	left: 20%;
+	display: inline-block;
+	margin: 80px auto;
+	width: 80%;
 }
