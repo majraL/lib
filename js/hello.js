@@ -1,14 +1,15 @@
 ;(function (window) {
 
-	let Hello = function ( firstname, lastname, language ) {
+	// ZAŠTO NE RADE DEFAULT PARAMETRI U FUNKCIJI, NI U RETURN-U, NI DOLE KOD INIT-A ?? 
+	let Hello = function ( firstname , lastname, language ) {
 		return new Hello.init( firstname, lastname, language );
-	}
+	}; // ili const ?
 
-	let lang = [ 'bih', 'en' ];
+	const lang = [ 'ba', 'com' ];
 
-	let msg = {
-		bih: 'Alo ba',
-		en: 'Hello'
+	const msg = {
+		ba: 'Alo ba',
+		com: 'Hello'
 	};
 
 	Hello.prototype = {
@@ -33,14 +34,15 @@
 		output: function( selector ) {
 			let msg = this.hello();
 			document.getElementById(selector).innerHTML = msg;
+			console.log(msg);
 		}
 
 	}
 
 	Hello.init = function ( firstname, lastname, language ) {
-		this.firstname = firstname || `Amidja`;
-		this.lastname = lastname || `Fuzilovich`;
-		this.language = language || `bih`;
+			this.firstname = firstname || `Amidja`;
+			this.lastname = lastname || `Fuzilovich`;
+			this.language = language || `ba`;
 
 		// dodati validaciju() !
 	}

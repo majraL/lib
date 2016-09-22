@@ -2,17 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
 	<title>Hello lib</title>
 </head>
 <body>
-	<label for="firstname">Firstname</label>
-	<input id="firstname" name="firstname" type="text"><br>
-	<label for="lastname">Lastname</label>
-	<input id="lastname" name="lastname" type="text"><br>
-	<label for="language">Language</label>
-	<input id="language" name="language" type="text">'bih' ili 'en'<br>
-	<button onclick="go()">Go</button>
-	<div id="output"></div>
+	<header>
+		<div id="head">
+			<h1 id="head-h1">Hello!</h1> 
+			<h4>- this is /lib, a tiny library that can return an object which can salute you!</h4>
+		</div>
+	</header>
+	<section id="main-section">
+		<form>
+			<label for="firstname">Firstname</label>
+			<input id="firstname" name="firstname" type="text"><br>
+			<label for="lastname">Lastname</label>
+			<input id="lastname" name="lastname" type="text"><br>
+			<label for="language">Choose your domain</label>
+			<select name="language" id="language">
+				<option class="opt" value="ba">ba</option>
+				<option class="opt" value="com">com</option>
+			</select>
+		</form>
+		<button id="btn-submit" class="btn" onclick="go()">Go</button>
+	</section>
+	<section id="output-section">
+		<div id="output"></div>
+	</section>
 
 	<script src="js/hello.js"></script>
 	<script src="js/script.js"></script>
