@@ -1,9 +1,9 @@
 ;(function (window) {
 
-	// ZAŠTO NE RADE DEFAULT PARAMETRI U FUNKCIJI, NI U RETURN-U, NI DOLE KOD INIT-A ?? 
+	// default param. not working
 	let Hello = function ( firstname , lastname, language ) {
 		return new Hello.init( firstname, lastname, language );
-	}; // ili const ?
+	};
 
 	const lang = [ 'ba', 'com' ];
 
