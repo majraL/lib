@@ -8,11 +8,3 @@ var go = function () {
 	let pozz = H( firstname, lastname, language );
 	pozz.validate().output('output');
 }
-
-/*
-var isus = function test ( number = `isuse` ) {
-	return number;
-}
-
-console.log(isus('7878'));
-*/
